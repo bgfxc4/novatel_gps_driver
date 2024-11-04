@@ -134,7 +134,7 @@ Nodelets
         - `publish_clocksteering`: `true` to publish novatel_gps_msgs/ClockSteering messages.
             - Default: `false`
         - `publish_diagnostics`: `true` to publish node diagnostics.
-            - Default: `false`
+            - Default: `true`
         - `publish_gpgsa`: `true` to publish novatel_gps_msgs/Gpgsa messages.
             - Default: `false`
         - `publish_gpgsv`: `true` to publish novatel_gps_msgs/Gpgsv messages.
@@ -173,6 +173,8 @@ Nodelets
         - `publish_time_messages`: `true` to publish novatel_gps_msgs/Time messages.
             - Default: `false`
         - `publish_trackstat`: `true` to publish novatel_gps_msgs/Trackstat messages.
+            - Default: `false`
+        - `publish_invalid_gpsfix`: `true` to publish the `/gps` topic, even if the status of the GPS fix is `STATUS_NO_FIX`.
             - Default: `false`
         - `reconnect_delay_s`: Second delay between reconnection attempts.
             - Default: `0.5`
