@@ -170,6 +170,9 @@ Nodelets
         - `publish_sync_diagnostic`: If true, publish a time Sync diagnostic.
             - Ignored if `publish_diagnostics` is false.
             - Default: `true`
+        - `publish_dual_antenna_diagnostic`: If true, publish diagnostics for the second antenna.
+            - Ignored if `publish_diagnostics` is false.
+            - Default: same as `publish_novatel_dual_antenna_heading`
         - `publish_time_messages`: `true` to publish novatel_gps_msgs/Time messages.
             - Default: `false`
         - `publish_trackstat`: `true` to publish novatel_gps_msgs/Trackstat messages.
